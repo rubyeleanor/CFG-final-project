@@ -1,0 +1,244 @@
+body {
+    font-family: 'Special Elite', cursive;
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+    min-height: auto;
+
+}
+
+nav>a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+#linebreak {
+    border-top: 1px solid white;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+main {
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hometitle {
+    font-size: 7em;
+    text-transform: uppercase;
+}
+
+footer {
+    max-width: 800px;
+    margin: auto;
+
+}
+
+#social {
+    display: flex;
+}
+
+#social>a {
+    color: white;
+    justify-content: space-evenly;
+    padding: 1em 4em;
+}
+
+#copyright {
+    font-size: 10px;
+    text-align: center;
+    padding: 2px;
+}
+
+.inline {
+    display: inline;
+}
+
+/*catalogue stuff*/
+
+#worktitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#workinfo {
+
+    margin: 1em;
+    width: 400px;
+
+}
+
+.artwork {
+    object-fit: cover;
+    width: 305px;
+    height: 400px;
+    margin: 1em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+#title {
+    margin: 0;
+}
+
+#quote {
+    font-size: 20px;
+    padding: 0.5em 0;
+}
+
+#synopsis {
+    text-align: justify;
+}
+
+#workinfo>a {
+    color: white;
+    font-size: 24px;
+}
+
+/* Bio */
+
+#biodiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#bio {
+    max-width: 400px;
+    margin: 1em;
+}
+
+
+#biography {
+    text-align: justify;
+
+}
+
+/* links */
+
+#links {
+    justify-content: start;
+}
+
+.links {
+    max-width: 800px;
+    padding: 1em;
+}
+
+#linkdes {
+    font-size: 20px;
+
+}
+
+ul {
+    justify-content: center;
+}
+
+li {
+    list-style-position: outside;
+    list-style-type: "-";
+    line-height: 1.5em;
+}
+
+li>a {
+    color: white;
+    font-size: 20px;
+}
+
+/* mobile devices */
+@media (max-width: 800px) {
+
+    body {
+        min-width: 320px;
+    }
+
+    main {
+
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hometitle {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    #linebreak {
+        width: 280px;
+    }
+
+    #social>a {
+        justify-content: space-evenly;
+        padding: 1em 1em;
+    }
+
+    /*catalogue stuff & bio*/
+
+    #worktitle,
+    #biodiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #workinfo,
+    #coverimage,
+    #bio {
+
+        max-width: 250px;
+
+    }
+
+    .artwork {
+        width: 250px;
+        height: 313px;
+        object-fit: cover;
+        margin: 1em;
+    }
+
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #quote {
+        font-size: 15px;
+        padding: 0.5em 0;
+    }
+
+    #workinfo>a {
+        font-size: 20px;
+    }
+
+}
