@@ -31,20 +31,33 @@
     <main>
         <h2>Contact me</h2>
 
+        <div id="contactpg-container">
+            <div id="cform-container">
+                <form action="" id="contactForm">
+                    <fieldset><label for="name" class="cform-label">Name: </label>
+                        <input id="name" type="text" class="cform-input">
+                    </fieldset>
 
-        <form action="" id="contactForm">
-            <label for="name">Name:
-                <input id="name" type="text">
-            </label>
-            <label for="email">Email:
-                <input id="email" type="email">
-            </label>
-            <label for="message">Message:
-                <input id="message" type="text">
-            </label>
-            <input type="submit" value="Submit" />
-        </form>
+                    <fieldset>
+                        <label for="email" class="cform-label">Email: </label>
+                        <input id="email" type="email" class="cform-input">
+                    </fieldset>
 
+                    <fieldset>
+                        <label for="message" class="cform-label">Message: </label>
+                        <textarea id="message" type="text" class="cform-input messagetext"></textarea>
+                    </fieldset>
+
+                    <input type="submit" value="Submit" id="cform-button" />
+                </form>
+
+                <div class="form-feedback">
+                    <p class="success-response" id="success">Message sent!</p>
+                    <p class="error-response" id="error">Please complete all fields</p>
+
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>

@@ -6,11 +6,17 @@ contactForm.addEventListener('submit', (e) => {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const message = document.getElementById('message');
+    const success = document.getElementById('success');
+    const fail = document.getElementById('error');
 
     if (name.value == "" || email.value == "" || message.value == "") {
-        console.log('please fill out all fields');
+
+        fail.style.display = 'block';
+
     } else {
-        console.log('form submitted');
+        success.style.display = 'block';
+        fail.style.display = 'none';
+
         name.value = "";
         email.value = "";
         message.value = "";
